@@ -1,0 +1,35 @@
+/*selection based on html tag*/
+h2{
+    background-color: green;
+    color: white;
+}
+h3{
+    background-color:blue;
+    color: white;
+    
+}
+h1,h3{
+    color: white;
+}
+ul li{
+    color: red;
+}
+/*selction parent child*/
+ul>li{
+    color:blue
+}
+/* li{
+    color: green;
+} */
+/* selection class elements*/
+.item{
+    color: pink;
+}
+/*selection by id*/
+#list-item{
+    color: aqua;
+}
+/*selection by type*/
+input[type="email"]{
+    background-color:yellow;
+}
