@@ -1,0 +1,38 @@
+.box{
+    width:200px;
+    height: 200px;
+    background-color: olivedrab;
+    position: relative;
+    animation-name: anim2;
+    animation-duration: 4s;
+}
+
+@keyframes anim2{
+    0%{
+        left:0;
+        top:0;
+        background-color: aqua;
+    }
+    25%{
+        left:500px;
+        top:0;
+        background-color: green;
+    }
+    50%{
+        left:500px;
+        top:500px;
+        background-color: yellow;
+    }
+    75%{
+        left:0;
+        top: 500px;;
+        background-color:blue;
+    }
+    100%{
+        left:500px;
+        top:0;
+        background-color:blueviolet;
+    }
+
+
+}

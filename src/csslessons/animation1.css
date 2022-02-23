@@ -1,0 +1,24 @@
+.box{
+    width:200px;
+    height: 200px;
+    background-color: olivedrab;
+    position: relative;
+    animation-name: anim;
+    animation-duration: 4s;
+}
+
+
+
+
+@keyframes anim{
+    0%{
+        left:0;
+        top:0;
+        background-color: aqua;
+    }
+    100%{
+        left:500px;
+        top:0;
+        background-color: green;
+    }
+}

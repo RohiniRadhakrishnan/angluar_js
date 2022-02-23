@@ -4,24 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <style>
-       #first
-       {
-           color:blueviolet;
-           font-size:large;
-       }
-       #last
-       {
-           color:brown;
-           font-size:large;
-       }
-
-   </style>
-   
-    <title>pargraph</title>
+    <style>
+        /* p:nth-child(1n+1){
+            color: cyan;
+            font-size: larger;
+        } */
+        p:nth-child(even)
+        {
+            color:orange;
+            font-size: larger;
+        }
+        /* p:nth-child(odd){
+            color:brown;
+            font-size: larger;
+        }
+        P:first-child{
+            color: red;
+            font-size: larger;
+        } */
+        /* P:last-child{
+            color: blue;
+            font-size: larger;
+        }  */
+    </style>
+    <title>para2css</title>
 </head>
 <body>
-    <p id="first">
+    <p >
         "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
 
@@ -32,10 +41,8 @@
         <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
             "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
             </p>
-            <p id="last">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+            <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
                 "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
                 </p>
-
-    
 </body>
 </html>
