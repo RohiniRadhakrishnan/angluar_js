@@ -240,21 +240,21 @@ header #menu{
     height:10rem;
     width:10rem;
     z-index: -1;
-    box-shadow: 0 0 0 1rem rgba(255, 0, 221, 0.1);
+    box-shadow: 0 0 0 1rem rgba(151, 148, 151, 0.1);
 }
 
 
 .features .box-container .box i{
-    color:chocolate;
+    color:white;
     font-size: 4.5rem;
     margin: 8rem 0;
 }
 .features .box-container .box h3{
-    color:palevioletred;
+    color:black;
     font-size: 2rem;
 }
 .features .box-container .box p{
-    color:chocolate;
+    color:rgb(8, 8, 8);
     font-size: 1.2rem;
     padding: 1rem 0;
 }
@@ -316,7 +316,7 @@ padding-top: 8rem;
 }
 
 .contact .title{
-    color:chocolate;
+    color:white;
 }
 .contact form{
     width:85%;
@@ -333,14 +333,14 @@ padding-top: 8rem;
     padding: 0 1rem;
     margin: 1rem 0;
     font-size: 2rem;
-    border: .2rem solid pink;
+    border: .2rem solid grey;
     background:none;
     text-transform: none;
     color:white;
 
 }
 .contact form .inputBox input::placeholder,.contact form textarea::placeholder{
-    color: aqua;
+    color: lavender;
 }
 .contact form .inputBox input:focus,.contact form textarea:focus{
     border-color: var(--blue);
@@ -354,8 +354,8 @@ padding-top: 8rem;
 
 }
 .contact form .btn:hover{
-    background:yellow;
-    color:#333;
+    background:white;
+    color:black;
     
 }
 .faq{
