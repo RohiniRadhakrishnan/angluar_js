@@ -3,7 +3,12 @@
   padding: 0;
 }
 body {
-  background-image: url(./images/indexbg.jpg);
+  background-image: url(./images/iiibg.jpg);
+}
+header {
+  font-size: 25px;
+  color: white;
+  text-align: center;
 }
 .grid {
   display: grid;
