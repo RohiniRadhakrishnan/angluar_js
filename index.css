@@ -1,23 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(../angluar_js/images/i.png);
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 20px;
+}
+.html-lessons {
+  background-color: rgb(243, 242, 243);
 }
 
-body{
-    font-family: 'Kumbh Sans', sans-serif;
-    background-color:hsl(191, 22%, 90%);
-    display:flex;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url(../angluar_js/images/bg-pattern-bottom.svg);
-    background-repeat: no-repeat;
-    
+.challenges {
+  background-color: rgb(243, 242, 243);
+
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
-.container{
-    margin:0 auto;
-    text-align: center;
-    
+
+.styles {
+  background-color: rgb(236, 184, 223);
+
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+.title {
+  align-items: center;
+  color: rgb(8, 8, 8);
+}
+.script {
+  background-color: rgb(243, 242, 243);
+
+  grid-row: 1/4;
+  grid-column: 4/4;
 }
