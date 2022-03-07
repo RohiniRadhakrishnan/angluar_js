@@ -1,9 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
-  background-image: url(../angluar_js/images/i.png);
+  background-image: url(./images/indexbg.jpg);
 }
 .grid {
   display: grid;
@@ -26,8 +27,8 @@ body {
 }
 .script {
   background-color: rgb(243, 242, 243);
-  grid-row: 1/4;
   grid-column: 4/4;
+  grid-row: 1/4;
 }
 
 .title {
