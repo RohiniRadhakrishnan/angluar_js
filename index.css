@@ -1,7 +1,9 @@
 * {
-  background-image: url(./images/indexbg.jpg);
   margin: 0;
   padding: 0;
+}
+body {
+  background-image: url(./images/indexbg.jpg);
 }
 .grid {
   display: grid;
@@ -13,17 +15,20 @@
   background-color: rgb(243, 242, 243);
 }
 .styles {
-  background-color: rgb(236, 184, 223);
+  background-color: rgb(243, 242, 243);
+
   grid-column: 3/4;
   grid-row: 1/3;
 }
 .challenges {
-  background-color: rgb(243, 242, 243);
+  background-color: rgb(236, 184, 223);
+
   grid-column: 2/3;
   grid-row: 1/2;
 }
 .script {
-  background-color: rgb(243, 242, 243);
+  background-color: rgb(236, 184, 223);
+
   grid-column: 4/4;
   grid-row: 1/4;
 }
