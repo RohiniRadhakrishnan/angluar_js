@@ -1,0 +1,27 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-image: url(../images/tbg2.jpeg);
+}
+* {
+  margin: 100;
+  padding: 100;
+}
+h2 {
+  font-family: 'Courier New', monospace;
+}
+td,
+th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(248, 250, 252);
+}
+h2 {
+  text-align: center;
+  color: darkslategrey;
+}
