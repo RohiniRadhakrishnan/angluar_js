@@ -31,8 +31,8 @@ document.getElementById('connect').addEventListener('click', () => {
 window.onload = function () {
   if (screen.width < 1000) {
     console.log(arrows_imgs[0].src);
-    arrows_imgs[0].src = './assets/icons/icon-arrow-dark.svg';
-    arrows_imgs[1].src = './assets/icons/icon-arrow-dark.svg';
-    arrows_imgs[2].src = './assets/icons/icon-arrow-dark.svg';
+    arrows_imgs[0].src = './images/icon-arrow-dark1.svg';
+    arrows_imgs[1].src = './images//icon-arrow-dark4.svg';
+    arrows_imgs[2].src = './images/icon-arrow-dark4.svg';
   }
 };
