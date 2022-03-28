@@ -1,23 +1,20 @@
 :root {
   --blue: blue;
 }
-
 * {
+  box-sizing: border-box;
   font-family: 'Lora', serif;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   outline: none;
+  padding: 0;
   text-decoration: none;
-  transition: all 0.2s linear;
   text-transform: capitalize;
+  transition: all 0.2s linear;
 }
-
 *::selection {
   background: var(blue);
   color: white;
 }
-
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -25,87 +22,85 @@ html {
 body {
   overflow-x: hidden;
 }
-
 .btn {
-  font-size: 2rem;
-  padding: 0.7rem 3.5rem;
-  border-radius: 5rem;
-  color: white;
   background: var(--blue);
-  margin-top: 1rem;
-  box-shadow: 0 0.3rem 0.5rem rgba(141, 20, 125, 0.3);
-  cursor: pointer;
+  border-radius: 5rem;
   border: none;
+  box-shadow: 0 0.3rem 0.5rem rgba(141, 20, 125, 0.3);
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-top: 1rem;
   overflow: hidden;
+  padding: 0.7rem 3.5rem;
   position: relative;
   z-index: 0;
 }
 .btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 0%;
   background: #333;
-  z-index: -1;
+  content: '';
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
   transition: 0.2s linear;
+  width: 0%;
+  z-index: -1;
 }
 .btn:hover::before {
   left: 0;
   width: 100%;
 }
 .heading {
-  padding: 0.5rem 2rem;
-  font-size: 2rem;
   background: rgba(243, 243, 243, 0.959);
   color: var(--blue);
   display: inline-block;
+  font-size: 2rem;
   margin: 1rem 0;
+  padding: 0.5rem 2rem;
 }
 .title {
-  font-size: 4rem;
   color: #333 padding 0 1rem;
+  font-size: 4rem;
   text-align: center;
 }
-
 header {
-  width: 100%;
-  display: flex;
   align-items: center;
+  background-color: var(--blue);
+  display: flex;
   justify-content: space-between;
+  left: 0;
+  padding: 2rem 7%;
   position: fixed;
   top: 0;
-  left: 0;
+  width: 100%;
   z-index: 1000;
-  padding: 2rem 7%;
-  background-color: var(--blue);
 }
 header .logo {
-  font-size: 2.5rem;
   color: white;
+  font-size: 2.5rem;
 }
 header .navbar ul {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: space-between;
   list-style: none;
 }
 header .navbar ul li a {
+  color: white;
   font-size: 1.5rem;
   margin-left: 1.5rem;
-  color: white;
   position: relative;
 }
 header .navbar ul li a::before {
-  content: '';
-  position: absolute;
-  bottom: -0.5rem;
-  right: 0;
-  width: 0%;
-  height: 0.2rem;
   background: white;
+  bottom: -0.5rem;
+  content: '';
+  height: 0.2rem;
+  position: absolute;
+  right: 0;
   transition: 0.2s linear;
+  width: 0%;
 }
 header .navbar ul li a.active::before,
 header .navbar ul li a:hover::before {
@@ -113,23 +108,22 @@ header .navbar ul li a:hover::before {
   width: 100%;
 }
 header #menu {
-  font-size: 3rem;
   color: white;
   cursor: pointer;
   display: none;
+  font-size: 3rem;
 }
 .home {
-  min-height: 100vh;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  background: url(../images/homg-img.png) no-repeat;
-
-  background-size: 140% 80%;
   background-position: top;
-  padding: 1.5rem 7%;
+  background-size: 140% 80%;
+  background: url(../images/homg-img.png) no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
   padding-top: 4rem;
+  padding: 1.5rem 7%;
 }
 .home .image {
   flex: 1 1 40 rem;
@@ -138,18 +132,17 @@ header #menu {
 .home .image img {
   width: 100%;
 }
-
 .home .content {
   flex: 1 1 40 rem;
   padding-top: 5rem;
 }
 .home .content h1 {
-  font-size: 4rem;
   color: white;
+  font-size: 4rem;
 }
 .home .content p {
-  font-size: 2rem;
   color: black;
+  font-size: 2rem;
   padding: 0.5rem 0;
 }
 .home .content .btn {
@@ -160,19 +153,19 @@ header #menu {
   color: white;
 }
 .about {
-  min-height: 100vh;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
   background: #333;
-  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
   padding-top: 6rem;
+  padding: 2rem;
 }
 .about .image {
   flex: 1 1 40rem;
-  text-align: center;
   padding: 4rem 0;
+  text-align: center;
 }
 .about .image img {
   height: 70vh;
@@ -181,21 +174,21 @@ header #menu {
   flex: 1 1 40rem;
 }
 .about .content h3 {
-  font-size: 4rem;
   color: white;
+  font-size: 4rem;
 }
 .about .content .heading {
   background: rgb(250, 249, 249);
 }
 .about .content p {
-  font-size: 1.5rem;
   color: #eee;
+  font-size: 1.5rem;
   padding: 1rem 0;
 }
 .about .content ul li {
-  list-style: none;
-  font-size: 2rem;
   color: white;
+  font-size: 2rem;
+  list-style: none;
   padding: 0.5rem 0;
 }
 .about .content ul li i {
@@ -203,42 +196,40 @@ header #menu {
 }
 .features {
   min-height: 100vh;
-  text-align: center;
   padding-top: 7rem;
+  text-align: center;
 }
 .features .description {
-  padding: 1rem 0;
-  margin: 0 auto;
-  width: 70rem;
   color: black;
   font-size: 1.5rem;
+  margin: 0 auto;
+  padding: 1rem 0;
+  width: 70rem;
 }
-
 .features .box-container {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .features .box-container .box {
   margin: 2rem;
+  position: relative;
   width: 28rem;
   z-index: 0;
-  position: relative;
 }
 .features .box-container .box::before {
+  background: var(--blue);
+  box-shadow: 0 0 0 1rem rgba(151, 148, 151, 0.1);
   content: '';
+  height: 10rem;
+  left: 50%;
   position: absolute;
   top: 32.5%;
-  left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-  background: var(--blue);
-  height: 10rem;
   width: 10rem;
   z-index: -1;
-  box-shadow: 0 0 0 1rem rgba(151, 148, 151, 0.1);
 }
-
 .features .box-container .box i {
   color: white;
   font-size: 4.5rem;
@@ -254,81 +245,80 @@ header #menu {
   padding: 1rem 0;
 }
 .products {
-  min-height: 100vh;
-  text-align: center;
   background: grey;
-  padding: 1rem;
+  min-height: 100vh;
   padding-top: 8rem;
+  padding: 1rem;
+  text-align: center;
 }
 .products .box-container {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 1rem 0;
 }
 .products .box-container .box {
-  margin: 1rem;
   background: #444;
   box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+  margin: 1rem;
   padding: 2rem 4rem;
 }
 .products .box-container .box h3 {
-  padding: 1rem 0;
-  font-size: 2rem;
   color: white;
+  font-size: 2rem;
+  padding: 1rem 0;
 }
 .products .box-container .box .price {
-  padding: 1rem 0;
-  font-size: 3rem;
   color: white;
   display: block;
+  font-size: 3rem;
+  padding: 1rem 0;
 }
 .products .box-container .box img {
   height: 20rem;
-  width: 20rem;
   margin: 1rem 0;
+  width: 20rem;
 }
-
 .contact {
-  min-height: 100vh;
-  text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../images/contctimg.jpeg) no-repeat;
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
-  padding: 1rem;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/contctimg.jpeg) no-repeat;
+  min-height: 100vh;
   padding-top: 8rem;
+  padding: 1rem;
+  text-align: center;
 }
 .contact .heading {
   background: rgba(255, 254, 254, 0.973);
   color: blue;
 }
-
 .contact .title {
   color: white;
 }
 .contact form {
-  width: 85%;
   margin: 1rem auto;
+  width: 85%;
 }
 .contact form .inputBox {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .contact form .inputBox input,
 .contact form textarea {
-  height: 4rem;
-  width: 49%;
-  padding: 0 1rem;
-  margin: 1rem 0;
-  font-size: 2rem;
-  border: 0.2rem solid grey;
   background: none;
-  text-transform: none;
+  border: 0.2rem solid grey;
   color: white;
+  font-size: 2rem;
+  height: 4rem;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  text-transform: none;
+  width: 49%;
 }
 .contact form .inputBox input::placeholder,
 .contact form textarea::placeholder {
@@ -338,28 +328,27 @@ header #menu {
 .contact form textarea:focus {
   border-color: var(--blue);
 }
-
 .contact form textarea {
   height: 20rem;
-  width: 100%;
   padding: 1rem;
   resize: none;
+  width: 100%;
 }
 .contact form .btn:hover {
   background: white;
   color: black;
 }
 .faq {
-  text-align: center;
-  padding: 0.5rem;
-  padding-top: 8rem;
   min-height: 100vh;
+  padding-top: 8rem;
+  padding: 0.5rem;
+  text-align: center;
 }
 .faq .row {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .faq .row .image {
   flex: 1 1 40rem;
@@ -374,22 +363,22 @@ header #menu {
   padding: 1rem;
 }
 .faq .row .accordion-container .accordion {
-  text-align: left;
   padding: 0.5rem 0;
+  text-align: left;
 }
 .faq .row .accordion-container .accordion .accordion-heading {
-  color: aqua;
   background: var(--blue);
-  padding: 1rem;
-  font-size: 1.8rem;
+  color: aqua;
   cursor: pointer;
+  font-size: 1.8rem;
+  padding: 1rem;
 }
 .faq .row .accordion-container .accordion .accordion-content {
-  color: #333;
-  padding: 1rem;
-  font-size: 1.3rem;
   border: 0.2rem solid var(--blue);
+  color: #333;
   display: none;
+  font-size: 1.3rem;
+  padding: 1rem;
 }
 .faq .row .accordion-container .accordion:nth-child(1) .accordion-content {
   display: block;
@@ -399,91 +388,89 @@ header #menu {
 }
 .footer .box-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .footer .box-container .box {
   flex: 1 1 30rem;
   margin: 2rem;
 }
 .footer .box-container .box h3 {
-  font-size: 2.5rem;
   color: var(--blue);
+  font-size: 2.5rem;
 }
 .footer .box-container .box p {
-  font-size: 1.5rem;
   color: white;
+  font-size: 1.5rem;
   padding: 1rem 0;
 }
 .footer .box-container .box p i {
-  padding: 0 0.5rem;
   color: var(--blue);
+  padding: 0 0.5rem;
 }
-
 .footer .box-container .box a {
-  font-size: 1.8rem;
-  display: block;
   color: white;
+  display: block;
+  font-size: 1.8rem;
   padding: 0.5rem 0;
 }
 .footer a:hover {
   text-decoration: underline;
 }
 .footer .credit {
-  padding: 2rem 1rem;
-  text-align: center;
   background: #333;
   color: #eee;
   font-size: 2rem;
+  padding: 2rem 1rem;
+  text-align: center;
 }
 .footer .credit a {
   color: chocolate;
 }
-
 /* media queries */
 @media (max-width: 768px) {
+  a::before {
+    background: #333;
+  }
+
   html {
     font-size: 55%;
   }
-
   header #menu {
     display: block;
   }
   header .navbar {
+    background: white;
+    left: 0;
+    opacity: 0;
     position: fixed;
     top: -120%;
-    left: 0;
     width: 100%;
-    background: white;
-    opacity: 0;
   }
   header .navbar ul {
-    padding: 2rem 0;
     flex-flow: column;
     justify-content: center;
+    padding: 2rem 0;
   }
   header .navbar ul li a {
-    font-size: 2.5rem;
     color: #333;
     display: block;
+    font-size: 2.5rem;
     margin: 1rem 0;
   }
-  header .navbar ul li a::before {
-    background: #333;
-  }
-  .fa-times {
+  header .navbar ul li .fa-times {
     transform: rotate(180deg);
   }
   header .navbar.nav-toggle {
-    top: 7.4rem;
     opacity: 1;
+    top: 7.4rem;
   }
   .home .content {
     text-align: center;
   }
   .features .description {
-    width: auto;
     padding: 1;
+    width: auto;
   }
   .contact form {
     width: 95%;
@@ -497,8 +484,8 @@ header #menu {
     font-size: 3.5rem;
   }
   .about .image img {
-    width: 80%;
     height: auto;
+    width: 80%;
   }
   .contact form .inputBox input {
     width: 100%;

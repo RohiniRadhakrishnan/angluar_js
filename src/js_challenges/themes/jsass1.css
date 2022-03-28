@@ -1,0 +1,27 @@
+body {
+  background-color: grey;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px;
+  margin: 15%;
+  margin-left: 25%;
+  background-color: white;
+}
+.currency,
+.currency1,
+.currency2,
+.currency3,
+.currency4,
+.currency5 {
+  font-size: 30px;
+  text-align: center;
+  background-color: yellow;
+  padding: 20px;
+  border: 5px solid white;
+}
+.dropdown {
+  background-color: yellow;
+  border: none;
+}
