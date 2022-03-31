@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>onlinr refistration</title>
+    <link rel="stylesheet" href="./registration.css" />
+  </head>
+  <body>
+    <h1>"Online registration application for RT-PCR Test"</h1>
+    <form action="#" id="formSubmission" method="get">
+      <p>
+        <label>Person Name:</label>
+        <input
+          name="username"
+          required
+          minlength="5"
+          maxlength="10"
+          size="10"
+          id="uname"
+          title="Login username"
+        />
+      </p>
+      <br />
+      <p>
+        <label>Aadhar Number:</label>
+        <input
+          type="text"
+          name="number"
+          id="adharno"
+          placeholder="enter your adhard number"
+        />
+      </p>
+      <br />
+      <p>
+        <label>City:</label>
+        <input
+          type="text"
+          name="city"
+          id="city"
+          placeholder="enter your city"
+        />
+      </p>
+      <br />
+      <p>
+        <label>DOB:</label>
+        <input title="enter your DOB" id="dob" type="date" />
+      </p>
+      <br />
+      <p>
+        <label>Date of Test:</label>
+        <input type="date" name="Date of Test" id="date" />
+      </p>
+      <br />
+      <p>
+        <label>Time of Test:</label>
+        <input type="time" name="Time of  Test" id="time" />
+      </p>
+      <br />
+      <p>
+        <label>Result:</label>
+        <select id="primary" class="input">
+          <option>positive</option>
+          <option>negative</option>
+        </select>
+      </p>
+      <br />
+      <p>
+        <label>Lab name:</label>
+        <input type="text" name="labname" id="lab name" />
+      </p>
+      <br />
+      <p>
+        <label>Report No:</label>
+        <input type="number" name="reportno" id="reprt no" />
+      </p>
+      <br />
+
+      <p>
+        <label>Gender:</label>
+        <label for="g1">male</label>
+
+        <input
+          title="select gender"
+          type="radio"
+          name="gender"
+          id="g1"
+          value="male"
+        />
+      </p>
+      <p>
+        <label></label>
+        <label for="g1">female</label>
+
+        <input
+          title="select gender"
+          type="radio"
+          name="gender"
+          id="g1"
+          value="Female"
+        />
+      </p>
+      <br />
+      <p>
+        <input type="submit" value="Add" />
+      </p>
+    </form>
+    <ul id="data">
+      <li>Person Name</li>
+      <li>Aadhar Number</li>
+      <li>City</li>
+      <li>DOB</li>
+      <li>Date of Test</li>
+      <li>Time of Test</li>
+      <li>Result</li>
+      <li>Lab name</li>
+      <li>Report No</li>
+      <li>Gender</li>
+    </ul>
+    <script src="./registration.js"></script>
+  </body>
+</html>
